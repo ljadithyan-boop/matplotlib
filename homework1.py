@@ -14,8 +14,10 @@ plt.show()
 print("---------part2----------")
 import matplotlib.pyplot as plt
 fig,ax=plt.subplots(2,1,sharex=True)
-plt.axes[0].plot([product_a])
-plt.axes[1].plot([product_b])
+plt.xlabel("month")
+plt.ylabel("sales")
+plt.axes[0].plot(["month"], [product_a])
+plt.axes[1].plot(["month"], [product_b])
 plt.show()
 
 
