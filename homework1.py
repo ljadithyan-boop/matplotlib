@@ -10,14 +10,17 @@ plt.ylabel("sales")
 plt.plot()
 plt.show()
 
-
-print("---------part2----------")
 import matplotlib.pyplot as plt
-fig,ax=plt.subplots(2,1,sharex=True)
-plt.xlabel("month")
-plt.ylabel("sales")
-plt.axes[0].plot(["month"], [product_a])
-plt.axes[1].plot(["month"], [product_b])
-plt.show()
 
+months = ["Jan", "Feb", "Mar", "Apr"]   # your actual x-axis values
+product_a = [200, 250, 300, 350]
+product_b = [180, 220, 260, 310]
+
+fig, ax = plt.subplots(2, 1, sharex=True)
+ax[0].plot(months, product_a)
+ax[1].plot(months, product_b)
+
+plt.xlabel("months")
+plt.ylabel("sales")
+plt.show()
 
